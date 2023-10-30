@@ -6,7 +6,7 @@ An app for browsing images of cute dogs from the [Dog CEO API](https://dog.ceo/d
 
 ## Screenshots
 
-<img src="assets/images/appScreenShot.PNG" width="800" height="400">
+<img src="assets/images/appScreenShot.PNG" width="1000" height="400">
 
 
 ## Features
