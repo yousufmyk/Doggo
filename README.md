@@ -35,7 +35,7 @@ An app for browsing images of cute dogs from the [Dog CEO API](https://dog.ceo/d
 
 1. Clone the repo
 ```
-git clone https://github.com/your_username/doggo.git
+git clone https://github.com/yousufmyk/doggo.git
 ```
 2. Install dependencies
 ```
