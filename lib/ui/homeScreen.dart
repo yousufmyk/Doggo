@@ -71,102 +71,100 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(
               height: 150,
-              child: Expanded(
-                child: PageView(
-                  allowImplicitScrolling: true,
-                  reverse: true,
-                  controller: controller,
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => BreedListScreen()));
-                      },
-                      child: Stack(
-                        children: [
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 8.0),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 150,
-                              decoration: BoxDecoration(
-                                  color:
-                                      const Color.fromARGB(255, 75, 199, 240),
-                                  borderRadius: BorderRadius.circular(18)),
-                            ),
+              child: PageView(
+                allowImplicitScrolling: true,
+                reverse: true,
+                controller: controller,
+                scrollDirection: Axis.horizontal,
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => BreedListScreen()));
+                    },
+                    child: Stack(
+                      children: [
+                        Padding(
+                          padding:
+                              const EdgeInsets.symmetric(horizontal: 8.0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: 150,
+                            decoration: BoxDecoration(
+                                color:
+                                    const Color.fromARGB(255, 75, 199, 240),
+                                borderRadius: BorderRadius.circular(18)),
                           ),
-                          Positioned(
-                            top: 10,
-                            left: 130,
-                            right: 0,
-                            child: Text(
-                              homeScreenBannner1Text,
-                              style: appstylefuncky(
-                                  22,
-                                  const Color.fromARGB(255, 255, 255, 129),
-                                  FontWeight.bold),
-                            ),
+                        ),
+                        Positioned(
+                          top: 10,
+                          left: 130,
+                          right: 0,
+                          child: Text(
+                            homeScreenBannner1Text,
+                            style: appstylefuncky(
+                                22,
+                                const Color.fromARGB(255, 255, 255, 129),
+                                FontWeight.bold),
                           ),
-                          Positioned(
-                            left: 0,
-                            right: 220,
-                            //top: 20,
-                            child: Image(
-                              image: AssetImage(homeScreenBanner1Image),
-                            ),
+                        ),
+                        Positioned(
+                          left: 0,
+                          right: 220,
+                          //top: 20,
+                          child: Image(
+                            image: AssetImage(homeScreenBanner1Image),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => SubBreedScreen()));
-                      },
-                      child: Stack(
-                        children: [
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 8.0),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 150,
-                              decoration: BoxDecoration(
-                                  color: const Color(0xff707092),
-                                  borderRadius: BorderRadius.circular(18)),
-                            ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SubBreedScreen()));
+                    },
+                    child: Stack(
+                      children: [
+                        Padding(
+                          padding:
+                              const EdgeInsets.symmetric(horizontal: 8.0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: 150,
+                            decoration: BoxDecoration(
+                                color: const Color(0xff707092),
+                                borderRadius: BorderRadius.circular(18)),
                           ),
-                          Positioned(
-                            top: 10,
-                            left: 130,
-                            right: 0,
-                            child: Text(
-                              homeScreenBannner2Text,
-                              style: appstylefuncky(
-                                  22,
-                                  const Color.fromARGB(255, 255, 255, 129),
-                                  FontWeight.bold),
-                            ),
+                        ),
+                        Positioned(
+                          top: 10,
+                          left: 130,
+                          right: 0,
+                          child: Text(
+                            homeScreenBannner2Text,
+                            style: appstylefuncky(
+                                22,
+                                const Color.fromARGB(255, 255, 255, 129),
+                                FontWeight.bold),
                           ),
-                          Positioned(
-                            left: 0,
-                            right: 230,
-                            top: 20,
-                            child: Image(
-                              image: AssetImage(homeScreenBanner2Image),
-                            ),
+                        ),
+                        Positioned(
+                          left: 0,
+                          right: 230,
+                          top: 20,
+                          child: Image(
+                            image: AssetImage(homeScreenBanner2Image),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
             Padding(
